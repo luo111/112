@@ -3,7 +3,6 @@ module.exports = function printInventory(inputs) {
     var barcode_list = get_barcode_list(inputs);
     var shopping_cart = get_shopping_cart(barcode_list);
     var list_print = get_shopping_lists(shopping_cart);
-    //return list_print;
     console.group(list_print);
     console.log(barcode_list);
     console.info(shopping_cart); 
